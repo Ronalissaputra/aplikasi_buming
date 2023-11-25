@@ -21,10 +21,7 @@ const Detailartikel = () => {
     <SafeAreaView className="min-h-screen bg-white">
       <Return to="Artikelscreen" parameter="Detail" />
       <ScrollView className="m-2 h-auto">
-        <Image
-          source={{ uri: `${items.url}` }}
-          className="w-full h-[200px] rounded-md"
-        />
+        <Image source={{ uri: `${items.url}` }} className="rounded-md h-1/4" />
         <Text className="text-2xl font-semibold py-2">{items.title}</Text>
         <Text className="text-xl">{items.body}</Text>
       </ScrollView>
