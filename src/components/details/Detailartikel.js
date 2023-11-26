@@ -13,7 +13,7 @@ const Detailartikel = () => {
       <ScrollView className="m-2">
         <Image
           source={{
-            uri: `${url}`,
+            uri: url,
           }}
           className="rounded-md h-96"
         />

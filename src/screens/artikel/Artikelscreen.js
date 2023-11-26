@@ -13,14 +13,14 @@ import { useNavigation } from "@react-navigation/native";
 
 const Artikelscreen = () => {
   const navigation = useNavigation();
-  // const [items, setItems] = useState([]);
+  const [items, setItems] = useState([]);
 
-  const { isLoading, data: items } = useQuery({
+  const { isLoading } = useQuery({
     queryKey: ["reqGetartikel"],
     queryFn: reqGetartikel,
-    // onSuccess: (res) => {
-    //   setItems(res);
-    // },
+    onSuccess: (res) => {
+      setItems(res);
+    },
   });
 
   return (
